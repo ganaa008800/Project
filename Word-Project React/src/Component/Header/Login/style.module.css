@@ -1,0 +1,8 @@
+.Login {
+  /* background-color: blue; */
+  display: flex;
+  justify-content: CENTER;
+  align-items: CENTER;
+  font-size: 18px;
+  color: #457b9d;
+}

@@ -1,0 +1,8 @@
+.MainBox {
+  background-color: #bee3db;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 15px;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 3;
+}

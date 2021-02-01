@@ -1,0 +1,62 @@
+
+FIREBASE 
+firebase суулгах 
+ 
+1. Go to console 
+2. Add project
+3. project нэрийг бичээд continue 
+4. continue
+5. Defualt Account for Firebase 
+6. continue Уншаад дуусангуут нь дахиад
+7. continue Ингээд firbase project дээр үүснэ.
+8. Realtime Database 
+
+9. Create Database
+10. United States (us-central1)
+11. start in test mode
+12. https://word-app-34bb1-default-rtdb.firebaseio.com/ ---> Rest энэ хаягыг хуулж авна. 
+13 npm start ---> Серверээ ажиллуул. 
+
+ 
+Axios ашиглан 
+1. ctrl+` --> console -оо гаргаж ирээд суулгана. 
+2 npm intall --save axios --> суулгах команд    package.json --> dependencies ашиглах команд байдаг. Энэ дотор Axios сууна.  Устгах бол ---> npm unintall axios
+axios ашиглаад серверүү мэдээлэл дамжуулахдаа axios-ын post функцыг ашиглаж хийнэ. Хашаа илгээх гэж байгаад зааж өгч url бичиж өгнө. Жн: firebase дээр суусан url хуулж авчирч тавина. 
+axios.post("https://word-app-34bb1-default-rtdb.firebaseio.com/ dictionary. json ", word) 
+Энэ бол энэ word-app project руу орохын зааж өгч байна. 
+dictionary. json ---> project дотор ямар Database руу бичихийг (dictionary гэсэн хавтас үүсэж суудаг. )
+word --->  React component доторх функцын доторх энэ объект доторх өгөгдлийг  firebase –ын word-app project-ын dictionary. json гэж үүссэн хавтас руу чидэхнэ. 
+
+Аxios бүх функц promse ашигладаг. promse ажиллууаад амжилтай болсоных нь дараа then() функцаар барьж авна. тэгээд response хүрч ирнэ. Response хүрэнгүүт нь alert хийж болно. Ажилтай хадгаллаа гэж. Хэрвээ алдаа гарах юм бол catch барьж авна. Жн:
+
+axios.post("https://word-app-34bb1-default-rtdb.firebaseio.com/words.json", word).then(response => {
+    alert ("ажилта хадгаллаа ")
+}).catch ---> гэх мэт цаашаа явна. 
+
+
+
+ 
+Тусгай сomponent ашиглаад хийх  
+import axios from "axios";
+
+const instance = axios.create({
+baseURL: https://word-app-34bb1-default-rtdb.firebaseio.com/
+      }
+ );
+export default instance;
+
+
+Аxios-ыг сomponent-оос import-лож оруулж ирэх 
+import axios from "axios"
+continueWord = (props) => {
+const word = {
+    dicValue: this.state.value,
+    dicDesc: this.state.description
+ } ; }
+axios.post("/words.json", word);
+export default continueWord;
+
+ 
+axios -оо import-лож оруулж ирнэ. Дурын нэрээр оруулж ирж болно. Жн instance гэж функцын нэрээ өгчихөөд энэд axios гэж хүлээж авч байна. Ягаад гэвэл default export-лосон болохоор 
+Ингэж хийхээр нэг газараас axios-ыг удирдана гэсэн үг. 
+javascript-н синхрон програмчиллын гол ашигладаг Promse Судал

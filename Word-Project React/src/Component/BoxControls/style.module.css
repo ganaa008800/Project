@@ -1,0 +1,9 @@
+.BoxControls {
+  background-color: #f4f4f4;
+  width: 80%;
+  margin: auto;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  grid-gap: 10px;
+}

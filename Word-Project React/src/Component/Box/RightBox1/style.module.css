@@ -1,0 +1,11 @@
+.RightBox1 {
+  background-color: brown;
+  padding: 1rem;
+  border: 2px solid #e4cbcc;
+  border-radius: 20px 50px;
+
+  border-radius: 50px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

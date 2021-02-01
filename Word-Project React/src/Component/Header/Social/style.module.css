@@ -1,0 +1,19 @@
+.Social {
+  /* background-color: orange; */
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Social .facebook {
+  color: #3b5999;
+}
+.Social .twitter {
+  color: #55acee;
+}
+.Social .youtube {
+  color: #cd201f;
+}
+.Social .instagram {
+  color: #e4405f;
+}

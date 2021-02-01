@@ -1,0 +1,9 @@
+.LeftBox1 {
+  background-color: burlywood;
+  border: 2px solid #dedbd2;
+  padding: 1rem;
+  border-radius: 50px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

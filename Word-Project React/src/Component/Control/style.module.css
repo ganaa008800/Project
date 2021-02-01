@@ -1,0 +1,11 @@
+.Control {
+  /* background-color: green; */
+  width: 65%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1.5fr 3fr 0.8fr;
+  justify-self: stretch;
+}
+.Control input {
+  margin: 0px 20px 0px 0px;
+}

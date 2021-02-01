@@ -1,0 +1,10 @@
+.Logo {
+  /* height: 100%; */
+  /* padding-left: 50px; */
+  display: flex;
+  justify-content: CENTER;
+  align-items: CENTER;
+  font-size: 42px;
+  font-family: "Great Vibes", cursive;
+  /* background-color: rgb(226, 117, 81); */
+}

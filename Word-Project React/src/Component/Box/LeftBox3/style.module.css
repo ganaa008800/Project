@@ -1,0 +1,13 @@
+.LeftBox3 {
+  background-color: gray;
+  padding: 1rem;
+  border: 2px solid #e4cbcc;
+  border-radius: 50px 20px;
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+
+  border-radius: 50px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
